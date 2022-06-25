@@ -1,4 +1,45 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+
+const MobileMenu = ({ toggle }) => {
+  const toggleMenu = () => {
+    toggle();
+  };
+  return (
+    <>
+      <div className="absolute top-0 right-0 z-50 w-screen h-screen backdrop-blur-sm">
+        <div className="fixed h-screen z-40 w-3/4 md:w-2/4  right-0 top-0 bg-white xl:hidden backdrop-blur-sm">
+          <div className="h-20">
+            <button
+              onClick={toggleMenu}
+              className="p-8 float-right mr-16 text-3xl"
+            >
+              X
+            </button>
+          </div>
+          <ul className="menu-list flex flex-col text-center mb-2 items-start">
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+            <li className="menu-list-item cursor-pointer ml-10 p-2">Home</li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const Navigation = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -9,11 +50,11 @@ const Navigation = () => {
   };
 
   return (
-    <header>
-      <nav className="navbar container h-14 mx-auto flex items-center justify-between fixed top-0 left-0 z-10">
+    <header className="">
+      <nav className="navbar container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10 ">
         <h2 className="logo px-4">
           <svg
-            class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+            className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
             viewBox="0 0 342 35"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -24,7 +65,7 @@ const Navigation = () => {
           </svg>
         </h2>
 
-        <ul className=" flex items-center justify-between px-1  ">
+        <ul className="hidden lg:flex items-center justify-between px-1  ">
           <li className="pt-1 px-2 mx-2">Modal S</li>
           <li className="pt-1 px-2 mx-2">Modal 3</li>
           <li className="pt-1 px-2 mx-2">Modal X</li>
@@ -33,11 +74,17 @@ const Navigation = () => {
           <li className="pt-1 px-2 mx-2">Modal Y</li>
         </ul>
 
-        <ul className=" flex items-center justify-between actions">
+        <ul className="hidden lg:flex items-center justify-between actions">
           <li className="pt-1 px-2 mx-1">Shop</li>
           <li className="pt-1 px-2 mx-1">Account</li>
           <li className="pt-1 px-2 mx-1">Menu</li>
         </ul>
+
+        {/* toggle button */}
+        <button onClick={toggleMobileMenu} className="lg:hidden px-3">
+          {showMobileMenu ? "Close" : "Menu"}
+        </button>
+        {showMobileMenu ? <MobileMenu toggle={toggleMobileMenu} /> : ""}
       </nav>
     </header>
   );
