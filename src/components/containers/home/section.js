@@ -1,15 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const HomePage = () => {
+const Section = () => {
   return (
-    <div id="modalS" className="home h-screen w-full relative">
+    <section
+      id="modalS"
+      className="transition-all h-screen w-full relative snap-center"
+    >
       <div className="absolute top-28 md:top-32 lg:top-20 left-1/2 -translate-x-1/2  mx-auto text-center">
         <h1 className="text-5xl mb-2">Model 3</h1>
         <p className="text-sm tracking-wider whitespace-nowrap">
           Order Online for{" "}
-          <span className="underline underline-offset-4">
-            Touchless Delivery
-          </span>
+          <Link to="/">
+            <span className="underline underline-offset-4">
+              Touchless Delivery
+            </span>
+          </Link>
         </p>
       </div>
       <div className=" h-screen w-full">
@@ -24,8 +30,8 @@ const HomePage = () => {
           existing inventory
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default HomePage;
+export default Section;
