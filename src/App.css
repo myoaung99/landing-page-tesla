@@ -10,7 +10,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo,
-.actions {
+.logo {
   width: 210px;
+}
+
+.actions {
+  min-width: 210px;
 }

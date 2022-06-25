@@ -52,7 +52,7 @@ const Navigation = () => {
   return (
     <header className="">
       <nav className="navbar container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10 ">
-        <h2 className="logo px-4">
+        <h2 className="logo px-4 hover:cursor-pointer">
           <svg
             className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
             viewBox="0 0 342 35"
@@ -66,18 +66,36 @@ const Navigation = () => {
         </h2>
 
         <ul className="hidden lg:flex items-center justify-between px-1  ">
-          <li className="pt-1 px-2 mx-2">Modal S</li>
-          <li className="pt-1 px-2 mx-2">Modal 3</li>
-          <li className="pt-1 px-2 mx-2">Modal X</li>
-          <li className="pt-1 px-2 mx-2">Modal Y</li>
-          <li className="pt-1 px-2 mx-2">Modal Y</li>
-          <li className="pt-1 px-2 mx-2">Modal Y</li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal S
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal 3
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal X
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal Y
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal Y
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Modal Y
+          </li>
         </ul>
 
         <ul className="hidden lg:flex items-center justify-between actions">
-          <li className="pt-1 px-2 mx-1">Shop</li>
-          <li className="pt-1 px-2 mx-1">Account</li>
-          <li className="pt-1 px-2 mx-1">Menu</li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Shop
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Account
+          </li>
+          <li className="px-4 py-2 rounded hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
+            Menu
+          </li>
         </ul>
 
         {/* toggle button */}
