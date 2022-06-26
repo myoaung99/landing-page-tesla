@@ -161,7 +161,7 @@ const Navigation = () => {
     <header>
       <nav className="container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10 ">
         <NavLink to="/">
-          <h2 className="logo px-4 hover:cursor-pointer">
+          <h2 className="logo p-2 hover:cursor-pointer">
             <svg
               className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
               viewBox="0 0 342 35"

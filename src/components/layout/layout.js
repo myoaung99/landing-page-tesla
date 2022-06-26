@@ -1,5 +1,4 @@
 import Navigation from "./navigation";
-import Footer from "./footer";
 
 const Layout = (props) => {
   return (
