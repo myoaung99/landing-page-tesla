@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-hook-inview";
 import { motion, useAnimation } from "framer-motion";
+import Footer from "../layout/footer";
 
 const actionVariant = {
   hidden: {
@@ -135,12 +136,16 @@ const Section = (props) => {
         variants={actionVariant}
         initial="hidden"
         animate={control}
-        className="absolute left-1/2 bottom-28 lg:bottom-48 xl:bottom-24 -translate-x-1/2 w-full xl:w-1/2 flex flex-col items-stretch md:flex-row md:justify-center px-6 md:px-10  "
+        className="absolute left-1/2 bottom-28 lg:bottom-48 xl:bottom-36 -translate-x-1/2 w-full xl:w-1/2 flex flex-col items-stretch md:flex-row md:justify-center px-6 md:px-10  "
       >
         {type === "accessories" ? (
-          <button className=" rounded-full bg-zinc-600 mx-2 md:mx-0 mb-3 md:mb-0 py-3 md:px-16 lg:py-4 xl:py-2 uppercase text-white md:mr-6 text-xs lg:text-sm xl:text-xs font-bold tracking-wide">
-            <Link to="/">shop now</Link>
-          </button>
+          <>
+            {" "}
+            <button className="mb-14 md:mb-0 rounded-full bg-zinc-600 md:mx-0 py-3 md:px-20 lg:py-4 xl:py-2 uppercase text-white  text-xs lg:text-sm xl:text-xs font-bold tracking-wide">
+              <Link to="/">shop now</Link>
+            </button>
+            <Footer />
+          </>
         ) : (
           <>
             <button className=" rounded-full bg-zinc-600 mx-2 md:mx-0 mb-3 md:mb-0 py-3 md:px-16 lg:py-4 xl:py-2 uppercase text-white md:mr-6 text-xs lg:text-sm xl:text-xs font-bold tracking-wide">
