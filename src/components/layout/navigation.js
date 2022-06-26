@@ -175,7 +175,7 @@ const Navigation = () => {
           </h2>
         </NavLink>
 
-        <ul className="hidden lg:flex items-center justify-between px-1  ">
+        <ul className="hidden xl:flex items-center justify-between px-1  ">
           <NavLink to="/">
             <li className="px-4 py-1 rounded-xl hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer ">
               Modal S
@@ -208,7 +208,7 @@ const Navigation = () => {
           </NavLink>
         </ul>
 
-        <ul className="hidden lg:flex items-center justify-between actions">
+        <ul className="hidden xl:flex items-center justify-between actions">
           <NavLink to="/">
             <li className="px-4 py-1 rounded-xl hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer">
               Shop
@@ -229,7 +229,7 @@ const Navigation = () => {
         {/* toggle button */}
         <button
           onClick={toggleMobileMenu}
-          className="lg:hidden px-5 py-1 mr-5 rounded-md bg-gray-400 bg-opacity-50"
+          className="xl:hidden px-5 py-1 mr-5 rounded-md bg-gray-400 bg-opacity-50"
         >
           {showMobileMenu ? "" : "Menu"}
         </button>
