@@ -17,11 +17,16 @@ const backdropVariants = {
       type: "tween",
       stiffness: 120,
       ease: "easeInOut",
-      when: "beforeChildren",
     },
   },
   exit: {
     x: "300px",
+    opacity: 0,
+    transition: {
+      type: "tween",
+      stiffness: 120,
+      ease: "easeInOut",
+    },
   },
 };
 
@@ -265,14 +270,16 @@ const Navigation = () => {
             {showMobileMenu ? "" : "Menu"}
           </button>
 
-          {showMobileMenu ? (
-            <MobileMenu
-              toggle={toggleMobileMenu}
-              showMobileMenu={showMobileMenu}
-            />
-          ) : (
-            ""
-          )}
+          <AnimatePresence>
+            {showMobileMenu ? (
+              <MobileMenu
+                toggle={toggleMobileMenu}
+                showMobileMenu={showMobileMenu}
+              />
+            ) : (
+              ""
+            )}
+          </AnimatePresence>
         </nav>
       </header>
     </AnimatePresence>
