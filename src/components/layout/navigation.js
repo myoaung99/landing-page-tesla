@@ -55,11 +55,10 @@ const MobileMenu = ({ toggle, showMobileMenu }) => {
               </button>
             </div>
             <ul className="menu-list w-full h-screen pb-48 flex flex-col text-center mt-2 items-start overflow-scroll ">
-              <NavLink to="/">
-                <li className="menu-list-item cursor-pointer ml-10 p-2 mb-2">
-                  Model S
-                </li>
-              </NavLink>
+              <li className="menu-list-item cursor-pointer ml-10 p-2 mb-2">
+                <NavLink to="/model-s">Model S</NavLink>
+              </li>
+
               <NavLink to="/">
                 <li className="menu-list-item cursor-pointer ml-10 p-2 mb-2">
                   Model 3
@@ -195,9 +194,9 @@ const Navigation = () => {
   return (
     <AnimatePresence>
       <header>
-        <nav className="container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10 ">
+        <nav className="container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10">
           <NavLink to="/">
-            <h2 className="logo m-2 p-2 hover:cursor-pointer">
+            <h2 className="logo m-2 p-2 px-6 hover:cursor-pointer">
               <svg
                 className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
                 viewBox="0 0 342 35"
@@ -212,7 +211,7 @@ const Navigation = () => {
           </NavLink>
 
           <ul className="hidden xl:flex items-center justify-between px-1  ">
-            <NavLink to="/">
+            <NavLink to="/model-s">
               <li className="px-4 py-1 rounded-xl hover:bg-gray-400 hover:bg-opacity-30 mx-1 hover:cursor-pointer ">
                 Modal S
               </li>
