@@ -34,7 +34,7 @@ const CarouselVideo = () => {
         <div className="px-4 py-4 mt-10 shadow-md text-sm bg-black md:px-10 lg:px-20 xl:px-48">
           <div className="lg:px-40">
             <h3 className=" text-white bold mb-4">Cinematic Experience</h3>
-            <p className="text-white">
+            <p className="text-sm text-gray-300">
               A 17” touchscreen with left-right tilt offers 2200 x 1300
               resolution, true colors and exceptional responsiveness for gaming,
               movies and more.
@@ -58,7 +58,7 @@ const CarouselVideo = () => {
         <div className="px-4 py-4 mt-10 shadow-md text-sm bg-black md:px-10 lg:px-20 xl:px-48">
           <div className="lg:px-40">
             <h3 className=" text-white bold mb-6">Yoke Steering</h3>
-            <p className="text-white">
+            <p className="text-sm text-gray-300">
               A bold new approach gives you a true connection to Model S,
               offering better steering feel and unobstructed views of your dash
               and the road ahead. Tap the brake and Model S automatically
@@ -85,7 +85,7 @@ const CarouselVideo = () => {
           <div className="lg:px-40">
             {" "}
             <h3 className=" text-white bold mb-6"> Perfect Environment</h3>
-            <p className="text-white">
+            <p className="text-sm text-gray-300">
               Air vents are hidden throughout the cabin, while tri-zone
               temperature controls, ventilated seats and HEPA filtration deliver
               the perfect environment.
@@ -109,7 +109,7 @@ const CarouselVideo = () => {
         <div className="px-4 py-4 mt-10 shadow-md text-sm bg-black md:px-10 lg:px-20 xl:px-48">
           <div className="lg:px-40">
             <h3 className=" text-white bold mb-6"> Redesigned Second Row</h3>
-            <p className="text-white">
+            <p className="text-sm text-gray-300">
               Seating for three adults, with extra legroom, headroom and a
               stowable armrest with integrated storage and wireless charging.
             </p>
