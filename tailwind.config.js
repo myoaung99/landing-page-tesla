@@ -25,6 +25,10 @@ module.exports = {
           "url('/src/assets/images/model-s/Model-S-Main.jpg')",
         "small-main-model-s":
           "url('/src/assets/images/model-s/mobile/Model-S-Main-Mobile.jpg')",
+        "large-interior-hero":
+          "url('/src/assets/images/model-s/Interior-Hero-Desktop.jpg')",
+        "small-interior-hero":
+          "url('/src/assets/images/model-s/mobile/Interior-Hero-Mobile.jpg')",
       },
     },
   },

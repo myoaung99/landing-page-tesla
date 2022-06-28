@@ -192,8 +192,8 @@ const Navigation = () => {
   };
 
   return (
-    <AnimatePresence>
-      <header>
+    <>
+      <header id="navbar">
         <nav className="container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10">
           <NavLink to="/">
             <h2 className="logo m-2 p-2 px-6 hover:cursor-pointer">
@@ -281,7 +281,7 @@ const Navigation = () => {
           </AnimatePresence>
         </nav>
       </header>
-    </AnimatePresence>
+    </>
   );
 };
 

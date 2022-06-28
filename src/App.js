@@ -8,7 +8,7 @@ import Layout from "./components/layout/layout";
 function App() {
   return (
     <div>
-      <Layout>
+      <Layout className="overflow-hidden">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/model-s" element={<ModelS />} />

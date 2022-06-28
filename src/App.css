@@ -8,7 +8,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
 }
 
 .logo {
@@ -17,4 +16,45 @@ body {
 
 .actions {
   min-width: 210px;
+}
+
+.slick-dots {
+  width: auto;
+  bottom: 45%;
+  padding-left: 10px;
+}
+.slick-dots li {
+  width: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    top: 340px;
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slick-dots {
+    top: 460px;
+  }
+  .slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1340px) {
+  .slick-dots {
+    top: 600px;
+  }
 }

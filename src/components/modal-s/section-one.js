@@ -13,7 +13,7 @@ const SectionOne = () => {
 
       <div className="h-screen w-full bg-small-main-model-s md:bg-large-main-model-s bg-center bg-cover" />
 
-      <div className="absolute w-full md:w-3/4 lg:w-full xl:w-4/6 left-1/2 -translate-x-1/2 bottom-14 md:bottom-48 lg:bottom-16 xl:bottom-14 px-10 md:px-20 lg:px-16 xl:px-0 text-white flex flex-wrap justify-between items-center">
+      <div className="absolute w-full md:w-3/4 lg:w-full xl:w-4/6 left-1/2 -translate-x-1/2 bottom-14 md:bottom-30 lg:bottom-16 xl:bottom-14 px-10 md:px-20 lg:px-16 xl:px-0 text-white flex flex-wrap justify-between items-center">
         <div className="text-center">
           <p className="text-2xl md:text-3xl xl:text-2xl font-bold">396 mi</p>
           <p className="text-gray-300 text-xs md:text-sm mt-1">
