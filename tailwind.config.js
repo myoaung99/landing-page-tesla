@@ -29,6 +29,10 @@ module.exports = {
           "url('/src/assets/images/model-s/Interior-Hero-Desktop.jpg')",
         "small-interior-hero":
           "url('/src/assets/images/model-s/mobile/Interior-Hero-Mobile.jpg')",
+        "large-plaid-performance":
+          "url('/src/assets/images/model-s/Model-S-Performance-Desktop.jpg')",
+        "small-plaid-performance":
+          "url('/src/assets/images/model-s/mobile/Model-S-Performance-Mobile.jpg')",
       },
     },
   },

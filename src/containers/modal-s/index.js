@@ -2,6 +2,7 @@ import React from "react";
 import CarouselVideo from "../../components/modal-s/feature-carousel-vd";
 import InteriorGrid from "../../components/modal-s/interior-grid";
 import Interior from "../../components/modal-s/interior-section";
+import BeyondLudicrous from "../../components/modal-s/plaid-beyond";
 import SectionOne from "../../components/modal-s/section-one";
 
 const ModelS = () => {
@@ -11,6 +12,7 @@ const ModelS = () => {
       <Interior />
       <CarouselVideo />
       <InteriorGrid />
+      <BeyondLudicrous />
     </div>
   );
 };

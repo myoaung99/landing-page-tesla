@@ -2,7 +2,7 @@ import React from "react";
 
 const InteriorGrid = () => {
   return (
-    <section className="w-full bg-black py-24 md:px-4 xl:px-32">
+    <section className="w-full bg-black py-16 md:py-24 md:px-4 xl:px-32">
       <div className="container mx-auto">
         <div className="text-white md:flex md:items-center mb-1 ">
           <div className="md:w-1/2">
