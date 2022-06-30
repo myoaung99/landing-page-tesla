@@ -1,4 +1,5 @@
 import React from "react";
+import ElectricPowertrain from "../../components/modal-s/electric-powertrain";
 import CarouselVideo from "../../components/modal-s/feature-carousel-vd";
 import InteriorGrid from "../../components/modal-s/interior-grid";
 import Interior from "../../components/modal-s/interior-section";
@@ -13,6 +14,7 @@ const ModelS = () => {
       <CarouselVideo />
       <InteriorGrid />
       <BeyondLudicrous />
+      <ElectricPowertrain />
     </div>
   );
 };

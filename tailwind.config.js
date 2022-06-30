@@ -33,6 +33,14 @@ module.exports = {
           "url('/src/assets/images/model-s/Model-S-Performance-Desktop.jpg')",
         "small-plaid-performance":
           "url('/src/assets/images/model-s/mobile/Model-S-Performance-Mobile.jpg')",
+        "small-dual-engine":
+          "url('/src/assets/images/model-s/mobile/Model-S-Performance-Dual-Motor-Mobile.jpg')",
+        "large-dual-engine":
+          "url('/src/assets/images/model-s/model-s-performance-dual-motor-desktop.jpg')",
+        "small-tri-engine":
+          "url('/src/assets/images/model-s/mobile/Model-S-Performance-Tri-Motor-Mobile.jpg')",
+        "large-tri-engine":
+          "url('/src/assets/images/model-s/model-s-performance-tri-motor-desktop.jpg')",
       },
     },
   },
