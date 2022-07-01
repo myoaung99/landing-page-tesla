@@ -52,7 +52,7 @@ const BeyondLudicrous = () => {
         </p>
       </div>
       <div className="px-3 m-3 md:mx-6 lg:max-w-3xl xl:max-w-5xl lg:mx-auto">
-        <button className="w-full md:w-48 lg:w-2/6 xl:w-1/4 border-2 border-black rounded-3xl py-2  tracking-widest text-sm uppercase whitespace-nowrap">
+        <button className="w-full md:w-48 lg:w-2/6 xl:w-1/4 xl:ml-3 border-2 border-black rounded-3xl py-2  tracking-widest text-sm uppercase whitespace-nowrap">
           order now
         </button>
       </div>

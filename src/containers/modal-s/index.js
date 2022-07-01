@@ -1,5 +1,7 @@
 import React from "react";
+import EfficientDesign from "../../components/modal-s/design-for-efficiency";
 import ElectricPowertrain from "../../components/modal-s/electric-powertrain";
+import ExteriorGrid from "../../components/modal-s/exterior-grid";
 import CarouselVideo from "../../components/modal-s/feature-carousel-vd";
 import InteriorGrid from "../../components/modal-s/interior-grid";
 import Interior from "../../components/modal-s/interior-section";
@@ -15,6 +17,8 @@ const ModelS = () => {
       <InteriorGrid />
       <BeyondLudicrous />
       <ElectricPowertrain />
+      <EfficientDesign />
+      <ExteriorGrid />
     </div>
   );
 };

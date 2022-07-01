@@ -14,8 +14,8 @@ const ElectricPowertrain = () => {
   }, [isDualEngine]);
 
   const imgClasses = isDualEngine
-    ? "w-full h-48 md:h-1/4 lg:h-1/2 xl:h-full  rounded-lg bg-small-dual-engine lg:bg-large-dual-engine my-10 bg-cover bg-center"
-    : "w-full h-48 md:h-1/4 lg:h-1/2 xl:h-full  rounded-lg bg-small-tri-engine lg:bg-large-tri-engine my-10 bg-cover bg-center";
+    ? "w-full h-48 S md:h-96 xl:h-full  rounded-lg bg-small-dual-engine lg:bg-large-dual-engine my-10 bg-cover bg-center"
+    : "w-full h-48 S md:h-96 xl:h-full  rounded-lg bg-small-tri-engine lg:bg-large-tri-engine my-10 bg-cover bg-center";
 
   const selectDualEngineHandler = () => {
     setIsDualEngine(true);
@@ -35,7 +35,7 @@ const ElectricPowertrain = () => {
           and endurance in all conditions.
         </p>
       </div>
-      <div className="w-full h-screen my-5">
+      <div className="w-full xl:h-screen my-5">
         <div className={imgClasses} />
         <div className="flex justify-between xl:hidden ">
           <div
