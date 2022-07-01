@@ -56,7 +56,9 @@ const MobileMenu = ({ toggle, showMobileMenu }) => {
             </div>
             <ul className="menu-list w-full h-screen pb-48 flex flex-col text-center mt-2 items-start overflow-scroll ">
               <li className="menu-list-item cursor-pointer ml-10 p-2 mb-2">
-                <NavLink to="/model-s">Model S</NavLink>
+                <NavLink onClick={toggleMenu} to="/model-s">
+                  Model S
+                </NavLink>
               </li>
 
               <NavLink to="/">

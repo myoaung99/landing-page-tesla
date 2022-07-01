@@ -37,7 +37,7 @@ const ElectricPowertrain = () => {
       </div>
       <div className="w-full h-screen my-5">
         <div className={imgClasses} />
-        <div className="flex xl:hidden ">
+        <div className="flex justify-between xl:hidden ">
           <div
             onClick={selectDualEngineHandler}
             className={`${
@@ -50,16 +50,16 @@ const ElectricPowertrain = () => {
               vehicle in our current lineup, with insane power and maximum
               control.
             </p>
-            <div className="mt-5 md:mt-0">
-              <div>
+            <div className="mt-5 md:mt-0 md:flex md:items-center">
+              <div className="md:text-center">
                 <p className="text-2xl font-semibold">3.1s</p>
                 <p className="text-gray-700">0-60 mph</p>
               </div>
-              <div className="py-4">
+              <div className="py-4 md:mx-6 md:text-center">
                 <p className="text-2xl font-semibold">405 mi</p>
                 <p className="text-gray-700">Range (EPA est.)</p>
               </div>
-              <div>
+              <div className="md:text-center">
                 <p className="text-2xl font-semibold">670 hp</p>
                 <p className="text-gray-700">Peak Power</p>
               </div>
@@ -78,16 +78,16 @@ const ElectricPowertrain = () => {
               All-Wheel Drive, featuring torque vectoring and three independent
               carbon-sleeved rotors.
             </p>
-            <div className="mt-5 md:mt-0">
-              <div>
+            <div className="mt-5 md:mt-0 md:flex md:items-center">
+              <div className="md:text-center">
                 <p className="text-2xl font-semibold">1.99s</p>
                 <p className="text-gray-700">0-60 mph</p>
               </div>
-              <div className="py-4 ">
+              <div className="py-4 md:mx-6 md:text-center">
                 <p className="text-2xl font-semibold">396 mi</p>
                 <p className="text-gray-700">Range (EPA est.)</p>
               </div>
-              <div>
+              <div className="md:text-center">
                 <p className="text-2xl font-semibold">1020 hp</p>
                 <p className="text-gray-700">Peak Power</p>
               </div>
@@ -95,28 +95,28 @@ const ElectricPowertrain = () => {
           </div>
         </div>
       </div>
-      <div className="hidden xl:flex ">
+      <div className="hidden max-w-6xl mx-auto xl:flex ">
         <div
           onClick={selectDualEngineHandler}
           className={`${
             isDualEngine ? "" : "opacity-30"
-          } border-2 mx-2 p-2 rounded border-t-4 border-t-black hover:cursor-pointer transition-opacity ease-in-out`}
+          } border-2 mx-4 p-2 rounded border-t-4 border-t-black hover:cursor-pointer transition-opacity ease-in-out`}
         >
           <h3 className="">Model S</h3>
           <p className="py-4 text-gray-700 tracking-wide ">
             Dual Motor All-Wheel Drive unlocks more range than any other vehicle
             in our current lineup, with insane power and maximum control.
           </p>
-          <div className="">
-            <div>
+          <div className="flex items-center">
+            <div className="text-center">
               <p className="text-2xl font-semibold">3.1s</p>
               <p className="text-gray-700">0-60 mph</p>
             </div>
-            <div className="py-4">
+            <div className="py-4 text-center mx-10">
               <p className="text-2xl font-semibold">405 mi</p>
               <p className="text-gray-700">Range (EPA est.)</p>
             </div>
-            <div>
+            <div className="text-center">
               <p className="text-2xl font-semibold">670 hp</p>
               <p className="text-gray-700">Peak Power</p>
             </div>
@@ -127,7 +127,7 @@ const ElectricPowertrain = () => {
           onClick={selectTriEngineHandler}
           className={`${
             isDualEngine ? "opacity-30" : ""
-          } border-2 mx-2 p-2 rounded border-t-4 border-t-black hover:cursor-pointer transition-opacity ease-in-out`}
+          } border-2 mx-4 p-2 rounded border-t-4 border-t-black hover:cursor-pointer transition-opacity ease-in-out`}
         >
           <h3 className="">Model S Plaid</h3>
           <p className="py-4 text-gray-700 tracking-wide ">
@@ -135,16 +135,16 @@ const ElectricPowertrain = () => {
             All-Wheel Drive, featuring torque vectoring and three independent
             carbon-sleeved rotors.
           </p>
-          <div className="">
-            <div>
+          <div className="flex items-center">
+            <div className="text-center">
               <p className="text-2xl font-semibold">1.99s</p>
               <p className="text-gray-700">0-60 mph</p>
             </div>
-            <div className="py-4 ">
+            <div className="py-4 text-center mx-10">
               <p className="text-2xl font-semibold">396 mi</p>
               <p className="text-gray-700">Range (EPA est.)</p>
             </div>
-            <div>
+            <div className="text-center">
               <p className="text-2xl font-semibold">1020 hp</p>
               <p className="text-gray-700">Peak Power</p>
             </div>

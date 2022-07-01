@@ -1,12 +1,19 @@
 import React from "react";
+import ResponsiveImage from "../ui/responsive-image";
 
 const Interior = () => {
   return (
-    <section className="w-full min-h-screen bg-black pt-10 pb-20 ">
+    <section className="w-full min-h-screen bg-black pt-10  ">
       <h1 className="text-white text-center text-3xl md:text-5xl lg:text-6xl xl:py-10">
         Interior
       </h1>
-      <div className="bg-small-interior-hero md:bg-large-interior-hero h-screen w-full bg-cover bg-center" />
+
+      <ResponsiveImage
+        className="w-full h-full object-cover object-center mt-16"
+        mobileSrc="/images/model-s/mobile/Interior-Hero-Mobile.webp"
+        desktopSrc="/images/model-s/Interior-Hero-Desktop.webp"
+        alt="model s interior"
+      />
     </section>
   );
 };

@@ -1,9 +1,16 @@
 import React from "react";
+import ResponsiveImage from "../ui/responsive-image";
 
 const BeyondLudicrous = () => {
   return (
     <section className="w-full h-screen">
-      <div className="bg-small-plaid-performance md:bg-large-plaid-performance w-full h-3/5 bg-cover bg-center relative">
+      <div className="relative h-3/5">
+        <ResponsiveImage
+          className="w-full h-full object-cover object-center"
+          mobileSrc="/images/model-s/mobile/Model-S-Performance-Mobile.webp"
+          desktopSrc="/images/model-s/Model-S-Performance-Desktop.webp"
+          alt="model s performance"
+        />
         <div className="absolute w-full md:w-4/5 lg:max-w-3xl xl:max-w-xl left-1/2 -translate-x-1/2 bottom-8 md:bottom-12 xl:bottom-6 px-8 md:px-20 lg:px-16 xl:px-0 text-white flex flex-wrap justify-between items-center">
           <div className="text-center">
             <p className="text-2xl md:text-3xl xl:font-bold  ">
