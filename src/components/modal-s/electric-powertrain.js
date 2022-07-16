@@ -26,7 +26,7 @@ const ElectricPowertrain = () => {
 
   return (
     <section className="bg-gray-100 py-16 px-6 ">
-      <div>
+      <div className="lg:ml-32 lg:mr-32 xl:ml-36 max-w-4xl">
         <h2 className="text-3xl mb-5">Electric Powertrain</h2>
         <p className="text-gray-700 xl:w-4/5 tracking-wide">
           Model S platforms unite powertrain and battery technologies for

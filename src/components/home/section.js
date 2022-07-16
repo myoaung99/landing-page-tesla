@@ -44,7 +44,7 @@ const Section = (props) => {
         variants={actionVariant}
         initial="hidden"
         animate={control}
-        className="absolute top-28 md:top-32 lg:top-48 xl:top-20 left-1/2 -translate-x-1/2 text-center"
+        className="absolute top-28 lg:top-16  xl:top-20 left-1/2 -translate-x-1/2  mx-auto text-center"
       >
         <h1 className="text-5xl lg:text-6xl xl:text-5xl mb-2">{model}</h1>
         <p className="text-sm lg:text-lg xl:text-sm tracking-wider whitespace-nowrap">
@@ -64,7 +64,8 @@ const Section = (props) => {
         variants={actionVariant}
         initial="hidden"
         animate={control}
-        className="absolute left-1/2 bottom-28 lg:bottom-48 xl:bottom-24 -translate-x-1/2 w-full xl:w-1/2 flex flex-col items-stretch md:flex-row md:justify-center px-6 md:px-10  "
+        className="absolute left-1/2 bottom-28 lg:bottom-30 xl:bottom-24 -translate-x-1/2 w-full xl:w-1/2 flex flex-col
+        items-stretch md:flex-row md:justify-center px-6 md:px-10  "
       >
         {type === "accessories" ? (
           <AccessoriesButtons />

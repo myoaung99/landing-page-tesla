@@ -185,7 +185,7 @@ const MobileMenu = ({ toggle, showMobileMenu }) => {
 };
 
 // z-index 10 navbar
-const Navigation = () => {
+const Navigation = (props) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   // show hide mobile menu
@@ -193,10 +193,14 @@ const Navigation = () => {
     setShowMobileMenu((prev) => !prev);
   };
 
+  const {position} = props;
+
+  const navClasses = `${position === 'absolute' ? 'absolute':'fixed'} container h-16 flex items-center justify-between  top-0 left-1/2 -translate-x-1/2 z-10`
+
   return (
     <>
       <header id="navbar">
-        <nav className="container h-16 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 z-10">
+        <nav className={navClasses}>
           <NavLink to="/">
             <h2 className="logo m-2 p-2 px-6 hover:cursor-pointer">
               <svg

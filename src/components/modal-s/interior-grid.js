@@ -5,14 +5,17 @@ const InteriorGrid = () => {
     <section className="w-full bg-black py-16 md:py-24 md:px-4 xl:px-32">
       <div className="container mx-auto">
         <div className="text-white md:flex md:items-center mb-1 ">
-          <div className="md:w-1/2">
+          <div initial="hidden" whileInView="inView" className="md:w-1/2">
             <img
-              className=""
               src="/images/model-s/MS-Interior-Grid-A.jpg"
               alt="model-s-interior"
             />
           </div>
-          <div className="p-2 m-2 pb-10 md:pb-4 md:w-1/2 md:px-8 xl:px-16 ">
+          <div
+            initial="hidden"
+            whileInView="inView"
+            className="p-2 m-2 pb-10 md:pb-4 md:w-1/2 md:px-8 xl:px-16 "
+          >
             <h3 className="mb-3"> Stay Connected</h3>
             <p className="text-sm md:text-md text-gray-300">
               Instantly connect with multi-device Bluetooth, or fast charge

@@ -2,8 +2,9 @@ import React from "react";
 import Footer from "../layout/footer";
 import { Link } from "react-router-dom";
 
+
 const Button = (props) => {
-  const classes = `${props.className} md:mb-0 rounded-full  md:mx-0 py-3 md:px-20 lg:py-4 xl:py-2 uppercase text-xs lg:text-sm xl:text-xs font-bold tracking-wide`;
+  const classes = `${props.className} rounded-full mx-2 md:mx-0 mb-3 md:mb-0 py-2 md:px-16 xl:py-2 uppercase text-xs  font-bold tracking-wide`;
   return (
     <button className={classes}>
       <Link to="/">{props.children}</Link>

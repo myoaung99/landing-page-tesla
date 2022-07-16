@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "./../../components/home/section";
+import Layout from "../../components/layout/layout";
 
 const homeSections = [
   {
@@ -41,16 +42,19 @@ const homeSections = [
 
 const HomePage = () => {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth">
-      {homeSections.map((data) => (
-        <Section
-          key={data.model}
-          model={data.model}
-          type={data.type}
-          bgImg={data.bgImg}
-        />
-      ))}
-    </div>
+      <Layout position="fixed">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth">
+          {homeSections.map((data) => (
+              <Section
+                  key={data.model}
+                  model={data.model}
+                  type={data.type}
+                  bgImg={data.bgImg}
+              />
+          ))}
+        </div>
+      </Layout>
+
   );
 };
 

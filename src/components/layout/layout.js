@@ -2,9 +2,10 @@ import React from "react";
 import Navigation from "./navigation";
 
 const Layout = (props) => {
+    const {position} = props;
   return (
     <div>
-      <Navigation />
+      <Navigation position={position}/>
       <main>{props.children}</main>
     </div>
   );

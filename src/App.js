@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import HomePage from "./containers/home";
-import ModelS from "./containers/modal-s";
-import Layout from "./components/layout/layout";
+
+const HomePage = lazy(() => import("./containers/home"));
+const ModelS = lazy(() => import("./containers/modal-s/index"));
 
 function App() {
   return (
     <div>
-      <Layout className="overflow-hidden">
+      <Suspense
+        fallback={
+          <div className="w-screen h-screen flex justify-center items-center">
+            Loading...<p></p>
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/model-s" element={<ModelS />} />
         </Routes>
-      </Layout>
+      </Suspense>
     </div>
   );
 }
